@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap'); 
+
+
+
+  /* font-family: "Rammetto One", sans-serif; */
+  
+
+
+* {    
+    margin: 0;
+    padding: 0;
+   
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+   
+    font-family: "Protest Guerrilla", sans-serif;
+    padding: 5px;
+    background: linear-gradient(to top, #07012b, #e81004); 
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;   
+   
+}
+
+.yellow {
+    color: yellow;
+}
+
+.maior {
+    font-size: 170px;
+    color: #03010c;
+}
+
+.gray {
+    color: red;
+}
+
+
+header h1 {
+   
+    margin-bottom: -65px;
+   
+}
+
+body {  
+   
+    width: 100%;
+    background: linear-gradient(to top, #01082b, #340d0b); 
+    height: 100vh;
+     
+}
+
+.font-especial {
+    font-family: sans-serif;
+    font-style: normal;
+  
+}
+
+.container-Comandos {
+
+    text-align: center;
+    margin-top: 60px;
+}
+
+.container-Comandos input {
+    width: 400px;
+    padding: 8px;
+    margin: 15px;
+    border-radius: 15px;
+    font-size: 20px;
+    box-sizing: border-box;
+    border-color: #261392;
+    background-color: aliceblue;
+}
+
+.container-Comandos button {
+    width: 130px;
+    padding: 3px;
+    font-family: "Rammetto One", sans-serif;
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: #261392;
+    color: yellow;
+    margin-bottom: 90px;
+   
+}
+
+
+
+.container {
+  overflow-x: auto;
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.card {
+  height: 200px;
+  flex: 0 0 500px; /* Ensure a fixed width for each card */
+  margin: 20px;
+  background-color: #625385;
+  color: white;
+  padding: 10px;
+  
+  border-radius: 20px;
+  opacity: 0.3;
+  
+}
+
+.card h2 {
+    font-family: "Rammetto One", sans-serif;
+    color:  #c3b2e9;
+  
+}
+
+.card:hover {
+  transform: scale(1.07);
+  transition: transform 0.3s ease-in-out, opacity 0.5s ease-in-out 0.2s; /* O atraso está aqui */
+  opacity: 1;
+}
+
+footer {
+    font-family: "Rammetto One", sans-serif;
+    width: 100%;    
+    margin-bottom: 30px;
+    color: white; 
+    text-align: center; 
+    font-size: 1rem; 
+    margin-bottom: 0;
+    padding: 0;   
+    position: absolute; 
+    bottom: 0;    
+    background-color: #1c1547;   
+    
+}
+
+footer section {
+    padding: 20px;
+}
