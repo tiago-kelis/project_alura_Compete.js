@@ -86,7 +86,13 @@ body {
     background-color: #261392;
     color: yellow;
     margin-bottom: 90px;
+    cursor: pointer;
    
+}
+
+.container-Comandos button:hover {
+    background-color: #1c1547;
+    transition: 0.2s;
 }
 
 
@@ -103,28 +109,64 @@ body {
 }
 
 .card {
+  position: relative;
   height: 200px;
-  flex: 0 0 500px; /* Ensure a fixed width for each card */
+  flex: 0 0 1280px; /* Ensure a fixed width for each card */
   margin: 20px;
   background-color: #625385;
   color: white;
-  padding: 10px;
-  
+  padding: 10px 20px;  
   border-radius: 20px;
-  opacity: 0.3;
-  
+  opacity: 0.4;
+  cursor: pointer;
 }
 
 .card h2 {
     font-family: "Rammetto One", sans-serif;
+    font-size: 40px;
     color:  #c3b2e9;
+      /* ... other properties ... */
+  position: relative;
+  z-index: 2; /* Ensure text is on top */
+  opacity: 3; /* Adjust opacity as needed */
+  text-decoration: none;
   
+}
+
+.card h2:hover {
+
+    color: #07012b;
+
+}
+
+
+.card p {
+    /* ... other properties ... */
+    position: relative;
+    font-family: "Rammetto One", sans-serif;
+    font-size: 12px;
+    margin-bottom: 10px;
+    z-index: 2;
+    opacity: 3;
+}
+
+.card a {
+
+    position: relative;
+    z-index: 1; /* Ensure text is on top */
+    opacity: 3; /* Adjust opacity as needed */
+    color: #261392;
+
+}
+
+.card a:hover {
+    color: #07012b;
 }
 
 .card:hover {
   transform: scale(1.07);
   transition: transform 0.3s ease-in-out, opacity 0.5s ease-in-out 0.2s; /* O atraso está aqui */
-  opacity: 1;
+  opacity: 0.5;
 }
 
 footer {

@@ -1,11 +1,41 @@
 
-const searchButton = document.querySelector('button');
-const carCard = document.getElementById('ranger');
+function search() {
 
-searchButton.addEventListener('click', () => {
-  carCard.style.display = 'block';
-});
+  let search = document.getElementById("input").value;
 
-carCard.style.opacity = 0; // Inicialmente, o card está transparente
-// ...
-carCard.style.opacity = 1; // Ao mostrar, a opacidade aumenta gradualmente
+  let input = document.getElementById("container")
+
+   let valor = "";
+
+  for( let dado of dadosCars) {
+
+    if(search === ""){
+      return
+    }else{
+      
+      if(dado.title.includes(search)) {
+        valor += `
+  
+        <div class="card">
+                <h2>
+                    <a href="#" target="_blank">${dado.title}</a>
+                </h2>
+                <p class="descricao-meta">${dado.descricao}</p>
+                <a href=${dado.link} target="_blank">Mais informações</a>
+            </div>
+  
+    `
+  
+      }
+
+    }
+
+   
+
+   
+
+  } 
+
+  input.innerHTML = valor;
+
+}
