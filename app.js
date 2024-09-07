@@ -6,21 +6,31 @@ function search() {
   let input = document.getElementById("container")
 
    let valor = "";
+   let title = "";
+   let descricao = "";
 
-  for( let dado of dadosCars) {
+  
+
+  for( let dado of dadosCars) {    
+    search = search.toLowerCase();
+
+    title = dado.title.toLowerCase();
+    descricao = dado.descricao.toLowerCase();
 
     if(search === ""){
       return
     }else{
       
-      if(dado.title.includes(search)) {
+      if(title.includes(search) || descricao.includes(search)) {    
+
+
         valor += `
   
         <div class="card">
                 <h2>
-                    <a href="#" target="_blank">${dado.title}</a>
+                    <a href="#" target="_blank">${title}</a>
                 </h2>
-                <p class="descricao-meta">${dado.descricao}</p>
+                <p class="descricao-meta">${descricao}</p>
                 <a href=${dado.link} target="_blank">Mais informações</a>
             </div>
   
@@ -29,10 +39,7 @@ function search() {
       }
 
     }
-
-   
-
-   
+  
 
   } 
 

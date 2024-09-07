@@ -4,7 +4,7 @@
 let dadosCars = [   
 
 {
-    title: "ranger",
+    title: "Ranger",
     descricao: "A Ford Ranger é a personificação da robustez e versatilidade. Com design imponente e construção sólida, ela está pronta para encarar qualquer desafio, seja no trabalho ou na aventura.</p>",
     link: "https://pt.wikipedia.org/wiki/Ford_Ranger"
    
