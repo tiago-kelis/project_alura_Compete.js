@@ -110,7 +110,7 @@ body {
 
 .card {
   position: relative;
-  height: 200px;
+  height: 150px;
   flex: 0 0 500px; /* Ensure a fixed width for each card */
   margin: 20px;
   background-color: #625385;
